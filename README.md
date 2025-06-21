@@ -9,8 +9,7 @@
     font-family: Arial, sans-serif;
   }
   table {
-    width: 80%; /* Adjust table width as needed */
-    border-collapse: collapse; /* Collapses borders into a single border */
+    width: 90%; /* Adjust table width as needed */
     margin: 20px auto; /* Centers the table and adds some top/bottom margin */
     background-color: #333; /* Slightly lighter background for the table */
   }
@@ -28,29 +27,35 @@
 
 <h2>My Table</h2>
 
+
 <table>
-  <thead>
-    <tr>
-      <th>Header 1</th>
-      <th>Header 2</th>
-    </tr>
-  </thead>
-  <tbody>
+   <tbody>
     <tr>
       <td>Row 1, Cell 1</td>
-      <td>Row 1, Cell 2</td>
     </tr>
+  </tbody>
+</table>
+
+<table>
+   <tbody>
     <tr>
-      <td>Row 2, Cell 1</td>
-      <td>Row 2, Cell 2</td>
+      <td>Row 1, Cell 1</td>
     </tr>
+  </tbody>
+</table>
+
+<table>
+   <tbody>
     <tr>
-      <td>Row 3, Cell 1</td>
-      <td>Row 3, Cell 2</td>
+      <td>Row 1, Cell 1</td>
     </tr>
+  </tbody>
+</table>
+
+<table>
+   <tbody>
     <tr>
-      <td>Row 4, Cell 1</td>
-      <td>Row 4, Cell 2</td>
+      <td>Row 1, Cell 1</td>
     </tr>
   </tbody>
 </table>
