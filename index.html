@@ -1,63 +1,156 @@
 <html>
+
 <head>
-<title>Black Background Table</title>
-<style>
-  body {
-    background-color: black;
-    color: white; /* To make text visible on a black background */
-    font-family: Arial, sans-serif;
-  }
-  table {
-    width: 90%; /* Adjust table width as needed */
-    margin: 20px auto; /* Centers the table and adds some top/bottom margin */
-    background-color: #333; /* Slightly lighter background for the table */
-  }
-  th, td {
-    border: 1px solid white; /* White borders for cells */
-    padding: 10px;
-    text-align: left;
-  }
-  th {
-    background-color: #555; /* Slightly different background for table headers */
-  }
-</style>
+  <title>Black Background Table</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      width: 20%;
+      margin: 20px auto;
+      border: 4px groove #cac8c7;
+
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #333;
+      border: 1px solid #cac8c7;
+
+    }
+
+    td {
+      padding: 10px;
+      border-right: 1px groove #cac8c7;
+    }
+
+    img {
+      width: 300px;
+      height: 200px;
+    }
+
+    .button {
+      border: 1px solid white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+    }
+
+    .tdtop {
+      height: 50px;
+      vertical-align: 0px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .tdmid {
+      height: 100px;
+      text-align: center;
+      width: 90px;
+      
+    }
+
+    .tdmid2 {
+      height: 100px;
+      text-align: center;
+    }
+
+    .tdbottom {
+      height: 90px;
+      text-align: center;
+      border-bottom: 1px groove #cac8c7;
+    }
+
+    .tddiv {
+      display:inline-flex;
+      text-align: center;
+      width: 300px;
+      font-size: 15px;
+
+    }
+  </style>
 </head>
+
 <body>
 
-<h2>My Table</h2>
+  <h2>Portfolio</h2>
 
+  <table>
+    <tbody>
+      <tr>
+        <td class="tdtop">Mobile Sales Dashboard</td>
+        <td class="tdtop">NYC Collisions Dashboard</td>
+      </tr>
+      <tr>
+        <td class="tdmid"><img src="onyxdatachallenge.png"></td>
+        <td class="tdmid"><img src="nyccollisions.png"></td>
+      </tr>
+      <tr>
+        <td class="tdmid2">
+          <div class="tddiv">This dashboard was built as part of the Onyx
+            Data Challenge for the month of May 2025. It offers insights
+            into mobile sales over a period of 12 months. </div>
+        </td>
+        <td class="tdmid2">
+          <div class="tddiv">This dashboard is completely built in MS Excel.
+          The data has been cleaned using Power Query. It analyses collsions
+          in New York City and offers useful insights to minimise them. </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="tdbottom">
+          <button class="button button1">View Report</button>
+        </td>
+        <td class="tdbottom">
+          <button class="button button1">View Report</button>
+        </td>
+      </tr>
 
-<table>
-   <tbody>
-    <tr>
-      <td>Row 1, Cell 1</td>
-    </tr>
-  </tbody>
-</table>
+      <tr>
+        <td class="tdtop">Furniture Sales Dashboard</td>
+        <td class="tdtop">Air Quality Index Dashboard</td>
+      </tr>
+      <tr>
+        <td class="tdmid">Image</td>
+        <td class="tdmid"><img src="AQI.png"></td>
+      </tr>
+      <tr>
+        <td class="tdmid2">
+          <div class="tddiv">This is a fully dynamic dashboard made completely in MS Excel
+            for showcasing key metrics such as Sales, Profit, Shipping Duration and 
+          Statewise distribution of orders. </div>
+        </td>
+        <td class="tdmid2">
+          <div class="tddiv">One of the very first dashboards created to 
+          get insights into the Air Quality Index and pollution levels 
+          of various Indian cities.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="tdbottom">
+          <button class="button button1">View Report</button>
+        </td>
+        <td class="tdbottom">
+          <button class="button button1">View Report</button>
+        </td>
+      </tr>
 
-<table>
-   <tbody>
-    <tr>
-      <td>Row 1, Cell 1</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-   <tbody>
-    <tr>
-      <td>Row 1, Cell 1</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-   <tbody>
-    <tr>
-      <td>Row 1, Cell 1</td>
-    </tr>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
 </body>
+
 </html>
