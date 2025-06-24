@@ -1,20 +1,20 @@
 <html>
 
 <head>
-  <title>Black Background Table</title>
+  <title>Visalakshi's Data Portfolio</title>
   <style>
     body {
       background-color: black;
-      color: white;
+      color: #c4c4c4;
       /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     h2 {
       text-align: center;
-      width: 20%;
+      width: 30%;
       margin: 20px auto;
-      border: 4px groove #cac8c7;
+      border: 4px groove #c4c4c4;
 
     }
 
@@ -22,13 +22,12 @@
       width: 80%;
       margin: 20px auto;
       background-color: #333;
-      border: 1px solid #cac8c7;
 
     }
 
     td {
       padding: 10px;
-      border-right: 1px groove #cac8c7;
+      border-right: 1px groove #c4c4c4;
     }
 
     img {
@@ -36,8 +35,13 @@
       height: 200px;
     }
 
+    a {
+      color: #c4c4c4;
+      text-decoration: none;
+    }
+
     .button {
-      border: 1px solid white;
+      border: 1px solid #c4c4c4;
       padding: 15px 32px;
       text-align: center;
       text-decoration: none;
@@ -46,7 +50,15 @@
       margin: 4px 2px;
       cursor: pointer;
       background-color: black;
-      color: white;
+      color: #c4c4c4;
+    }
+
+    .tdfirst {
+      border-top: 1px groove #c4c4c4;
+    }
+
+    .tdleft {
+      border-left: 1px groove #c4c4c4;
     }
 
     .tdtop {
@@ -60,7 +72,7 @@
       height: 100px;
       text-align: center;
       width: 90px;
-      
+
     }
 
     .tdmid2 {
@@ -71,80 +83,88 @@
     .tdbottom {
       height: 90px;
       text-align: center;
-      border-bottom: 1px groove #cac8c7;
+      border-bottom: 1px groove #c4c4c4;
     }
 
     .tddiv {
-      display:inline-flex;
+      display: inline-flex;
       text-align: center;
       width: 300px;
       font-size: 15px;
-
     }
   </style>
 </head>
 
 <body>
 
-  <h2>Portfolio</h2>
+  <h2>Visalakshi's Data Portfolio</h2>
 
   <table>
     <tbody>
       <tr>
-        <td class="tdtop">Mobile Sales Dashboard</td>
-        <td class="tdtop">NYC Collisions Dashboard</td>
+        <td class="tdtop tdfirst tdleft">Mobile Sales Dashboard</td>
+        <td class="tdtop tdfirst">NYC Collisions Dashboard</td>
       </tr>
       <tr>
-        <td class="tdmid"><img src="onyxdatachallenge.png"></td>
+        <td class="tdmid tdleft"><img src="onyxdatachallenge.png"></td>
         <td class="tdmid"><img src="nyccollisions.png"></td>
       </tr>
       <tr>
-        <td class="tdmid2">
+        <td class="tdmid2 tdleft">
           <div class="tddiv">This dashboard was built as part of the Onyx
             Data Challenge for the month of May 2025. It offers insights
             into mobile sales over a period of 12 months. </div>
         </td>
-        <td class="tdmid2">
+        <td class="tdmid2 ">
           <div class="tddiv">This dashboard is completely built in MS Excel.
-          The data has been cleaned using Power Query. It analyses collsions
-          in New York City and offers useful insights to minimise them. </div>
+            The data has been cleaned using Power Query. It analyses collsions
+            in New York City and offers useful insights to minimise them. </div>
         </td>
       </tr>
       <tr>
-        <td class="tdbottom">
-          <button class="button button1">View Report</button>
+        <td class="tdbottom tdleft">
+          <a href="https://github.com/VisalakshiH/Onyx-Data-Challenge-May-2025" target="_blank">
+            <button class="button button1">View Report</button> 
+          </a>
         </td>
         <td class="tdbottom">
-          <button class="button button1">View Report</button>
+          <a href="https://github.com/VisalakshiH/New-York-City-Collisions-Dashboard" target="_blank">
+            <button class="button button1">View Report</button>
+          </a>
         </td>
       </tr>
 
       <tr>
-        <td class="tdtop">Furniture Sales Dashboard</td>
+        <td class="tdtop tdleft">Furniture Sales Dashboard</td>
         <td class="tdtop">Air Quality Index Dashboard</td>
       </tr>
       <tr>
-        <td class="tdmid">Image</td>
+        <td class="tdmid tdleft">Image</td>
         <td class="tdmid"><img src="AQI.png"></td>
       </tr>
+
       <tr>
-        <td class="tdmid2">
+        <td class="tdmid2 tdleft">
           <div class="tddiv">This is a fully dynamic dashboard made completely in MS Excel
-            for showcasing key metrics such as Sales, Profit, Shipping Duration and 
-          Statewise distribution of orders. </div>
+            for showcasing key metrics such as Sales, Profit, Shipping Duration and
+            Statewise distribution of orders. </div>
         </td>
         <td class="tdmid2">
-          <div class="tddiv">One of the very first dashboards created to 
-          get insights into the Air Quality Index and pollution levels 
-          of various Indian cities.</div>
+          <div class="tddiv">One of the very first dashboards created to
+            get insights into the Air Quality Index and pollution levels
+            of various Indian cities.</div>
         </td>
       </tr>
       <tr>
-        <td class="tdbottom">
+        <td class="tdbottom tdleft">
           <button class="button button1">View Report</button>
         </td>
         <td class="tdbottom">
-          <button class="button button1">View Report</button>
+          <a href="https://github.com/VisalakshiH/Air-Quality-Index-Dashboard" target="_blank">
+          <button class="button button1">
+              View Report
+          </button>
+        </a>
         </td>
       </tr>
 
