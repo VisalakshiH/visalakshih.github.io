@@ -1,220 +1,173 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Visalakshi's Data Portfolio</title>
-  <style>
-    body {
-      background-color: black;
-      color: #c4c4c4;
-      /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    h2 {
-      text-align: center;
-      width: 30%;
-      margin: 20px auto;
-      border: 4px groove #c4c4c4;
-
-    }
-
-    table {
-      width: 80%;
-      margin: 20px auto;
-      background-color: #333;
-
-    }
-
-    td {
-      padding: 10px;
-      border-right: 1px groove #c4c4c4;
-    }
-
-    img {
-      width: 300px;
-      height: 200px;
-    }
-
-    a {
-      color: #c4c4c4;
-      text-decoration: none;
-    }
-
-    .button {
-      border: 1px solid #c4c4c4;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      background-color: black;
-      color: #c4c4c4;
-    }
-
-    .tdfirst {
-      border-top: 1px groove #c4c4c4;
-    }
-
-    .tdleft {
-      border-left: 1px groove #c4c4c4;
-    }
-
-    .tdtop {
-      height: 50px;
-      vertical-align: 0px;
-      text-align: center;
-      font-size: 20px;
-    }
-
-    .tdmid {
-      height: 100px;
-      text-align: center;
-      width: 90px;
-
-    }
-
-    .tdmid2 {
-      height: 100px;
-      text-align: center;
-    }
-
-    .tdbottom {
-      height: 90px;
-      text-align: center;
-      border-bottom: 1px groove #c4c4c4;
-    }
-
-    .tddiv {
-      display: inline-flex;
-      text-align: center;
-      width: 300px;
-      font-size: 15px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .project-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+    <!-- Header -->
+    <header class="bg-gray-800 py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-teal-400">My Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-teal-400 transition-colors">About</a></li>
+                    <li><a href="#projects" class="hover:text-teal-400 transition-colors">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-teal-400 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<body>
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <img src="visa.png" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-teal-400 shadow-lg">
+            <h2 class="text-4xl font-bold mb-2">Visalakshi Hariharan</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                I'm passionate about using Power BI and Python to transform raw data into actionable insights. 
+                This portfolio showcases my projects in data analysis and visualization.
+            </p>
+        </div>
+    </section>
 
-  <h2>Visalakshi's Data Portfolio</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
 
-  <table>
-    <tbody>
-      <tr>
-        <td class="tdtop tdleft tdfirst">Furniture Sales Dashboard (MS Excel)</td>
-        <td class="tdtop tdfirst">NYC Collisions Dashboard (MS Excel)</td>
-      </tr>
-      <tr>
-        <td class="tdmid tdleft">
-          <a href="https://github.com/VisalakshiH/Furniture-Sales-Dashboard" target="_blank">
-          <img src="Furniture_Sales.png">
-          </a>
-        </td>
-        <td class="tdmid">
-          <a href="https://github.com/VisalakshiH/New-York-City-Collisions-Dashboard" target="_blank">
-          <img src="nyccollisions.png">
-          </a>
-          </td>
-      </tr>
-      <tr>
-        <td class="tdmid2 tdleft">
-          <div class="tddiv">This is a fully dynamic dashboard made completely in MS Excel
-            for showcasing key metrics such as Sales, Profit, Shipping Duration and
-            Statewise distribution of orders. </div>
-        </td>
-        <td class="tdmid2 ">
-          <div class="tddiv">This dashboard is completely built in MS Excel.
-            The data has been cleaned using Power Query. It analyses collsions
-            in New York City and offers useful insights to minimise them. </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="tdbottom tdleft">
-          <a href="https://github.com/VisalakshiH/Furniture-Sales-Dashboard" target="_blank">
-           <button class="button button1">View Report</button>
-          </a>
-        </td>
-        <td class="tdbottom">
-          <a href="https://github.com/VisalakshiH/New-York-City-Collisions-Dashboard" target="_blank">
-            <button class="button button1">View Report</button>
-          </a>
-        </td>
-      </tr>
+            <!-- Power BI Projects -->
+            <h3 class="text-2xl font-semibold text-teal-400 mb-6">Power BI Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <img src="onyxdatachallenge.png" alt="Power BI Project 1" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h4 class="text-xl font-bold mb-2">Mobile Sales Dashboard</h4>
+                    <p class="text-gray-400 mb-4">This dashboard was built for the Onyx Data Challenge for May 2025. It offers insights into mobile sales over a period of 12 months.</p>
+                    <a href="https://github.com/VisalakshiH/Onyx-Data-Challenge-May-2025" 
+                    class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
+                        View Project
+                    </a>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <img src="AQI.png" alt="Power BI Project 2" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h4 class="text-xl font-bold mb-2">Air Quality Index Dashboard</h4>
+                    <p class="text-gray-400 mb-4">One of the very first dashboards created to get insights into the Air Quality Index and pollution levels of various Indian cities.
+                    </p>
+                    <a href="https://github.com/VisalakshiH/Air-Quality-Index-Dashboard" 
+                    class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
+                        View Project
+                    </a>
+                </div>
 
-      <tr>
-       <td class="tdtop tdleft">Mobile Sales Dashboard (Power BI)</td>
-        <td class="tdtop">Air Quality Index Dashboard (Power BI)</td>
-      </tr>
-      <tr>
-        <td class="tdmid tdleft">
-          <a href="https://github.com/VisalakshiH/Onyx-Data-Challenge-May-2025" target="_blank">
-          <img src="onyxdatachallenge.png">
-          </a>
-        </td>
-        <td class="tdmid">
-          <a href="https://github.com/VisalakshiH/Air-Quality-Index-Dashboard" target="_blank">
-          <img src="AQI.png">
-          </a>
-        </td>
-      </tr>
 
-      <tr>
+            </div>
 
-        <td class="tdmid2 tdleft">
-          <div class="tddiv">This dashboard was built as part of the Onyx
-            Data Challenge for the month of May 2025. It offers insights
-            into mobile sales over a period of 12 months. </div>
-        </td>
-        <td class="tdmid2">
-          <div class="tddiv">One of the very first dashboards created to
-            get insights into the Air Quality Index and pollution levels
-            of various Indian cities.</div>
-        </td>
-      </tr>
-      <tr>
-        <td class="tdbottom tdleft">
-          <a href="https://github.com/VisalakshiH/Onyx-Data-Challenge-May-2025" target="_blank">
-          <button class="button button1">View Report</button>
-          </a>
-        </td>
-        <td class="tdbottom">
-          <a href="https://github.com/VisalakshiH/Air-Quality-Index-Dashboard" target="_blank">
-            <button class="button button1">
-              View Report
-            </button>
-          </a>
-        </td>
-      </tr>
-     
-      <tr>
-        <td class="tdtop tdleft">Exploratory Data Analysis Using Python</td>
-      </tr>
-      <tr>
-        <td class="tdmid tdleft">
-          <a href="https://github.com/VisalakshiH/online-sales-data-eda-pandas" target="_blank">
-          <img src="eda_pandas.png">
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td class="tdmid2 tdleft">
-          <div class="tddiv">This is currently **In Progress**. In this project, I am performing 
-            data analysis on a large scale retail sales dataset containing more than 5 million records. 
-            I am using Pandas for performing this analysis. </div>
-        </td>
-      </tr>
-      <td class="tdbottom tdleft">
-        <a href="https://github.com/VisalakshiH/online-sales-data-eda-pandas" target="_blank">
-          <button class="button button1">
-            View Report
-          </button>
-        </a>
-      </td>
+            <!-- Excel Projects -->
+            <h3 class="text-2xl font-semibold text-teal-400 mt-12 mb-6">MS Excel Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <img src="nyccollisions.png" alt="Python Project 1" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h4 class="text-xl font-bold mb-2">NYC Collisions Dashboard</h4>
+                    <p class="text-gray-400 mb-4">This is a fully dynamic dashboard made completely in MS Excel for showcasing key metrics 
+                        such as Sales, Profit, Shipping Duration and Statewise distribution of orders.</p>
+                    <a href="https://github.com/VisalakshiH/New-York-City-Collisions-Dashboard" 
+                    class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
+                        View Project
+                    </a>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <img src="Furniture_Sales.png" alt="Python Project 2" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h4 class="text-xl font-bold mb-2"> Furniture Sales Dashboard</h4>
+                    <p class="text-gray-400 mb-4">This dashboard is completely built in MS Excel. The data has been cleaned using Power Query. It analyses collsions in New York City and offers useful insights to minimise them.</p>
+                    <a href="https://github.com/VisalakshiH/Furniture-Sales-Dashboard" 
+                    class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
+                        View Project
+                    </a>
+                </div>
+                
+            </div>
 
-    </tbody>
-  </table>
+            <!-- SQL Projects -->
+            <h3 class="text-2xl font-semibold text-teal-400 mt-12 mb-6">SQL Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <img src="restaurant_analysis.jpg" alt="Python Project 1" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h4 class="text-xl font-bold mb-2">Restaurant Order Analysis Using MySQL</h4>
+                    <p class="text-gray-400 mb-4">
+                        Analysis of restaurant orders and customer data in SQL.</p>
+                    <a href="https://github.com/VisalakshiH/restaurant_sales_analysis" 
+                    class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
+                        View Project
+                    </a>
+                </div>
+                <!-- Project Card 2 -->
+                <!-- <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <img src="https://placehold.co/600x400/1a202c/a0aec0?text=Data+Analysis" alt="Python Project 2" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h4 class="text-xl font-bold mb-2">Automated Report Generator</h4>
+                    <p class="text-gray-400 mb-4">A script that uses Pandas and Matplotlib to automatically fetch data, perform analysis, and generate a PDF report.</p>
+                    <a href="#" class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
+                        View Project
+                    </a>
+                </div> -->
+                
+            </div>
 
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+                Feel free to connect with me on social media or send me an email. I'm always open to discussing new projects and opportunities.
+            </p>
+            <div class="flex justify-center space-x-6 text-2xl">
+                <a href="#" class="hover:text-teal-400 transition-colors" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="hover:text-teal-400 transition-colors" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:your.email@example.com" class="hover:text-teal-400 transition-colors" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-center text-gray-400">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
