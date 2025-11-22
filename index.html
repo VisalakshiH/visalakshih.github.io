@@ -1,184 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Font - Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .project-card {
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-    </style>
+    <title>Visalakshi Hariharan | Data Analysis Portfolio (Power BI, Excel, SQL)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-gray-100 antialiased">
-    <!-- Header -->
-    <header class="bg-gray-800 py-6">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-teal-400">My Portfolio</h1>
+
+<body>
+
+    <header>
+        <div class="container">
             <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#about" class="hover:text-teal-400 transition-colors">About</a></li>
-                    <li><a href="#projects" class="hover:text-teal-400 transition-colors">Projects</a></li>
-                    <li><a href="#contact" class="hover:text-teal-400 transition-colors">Contact</a></li>
+                <a href="#home" class="logo">Visalakshi Hariharan</a>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 md:py-24">
-        <div class="container mx-auto px-4 text-center">
-            <img src="visa.png" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-teal-400 shadow-lg">
-            <h2 class="text-4xl font-bold mb-2">Visalakshi Hariharan</h2>
-            <p class="text-gray-400 max-w-2xl mx-auto">
-                I'm passionate about using Power BI and Python to transform raw data into actionable insights. 
-                This portfolio showcases my projects in data analysis and visualization.
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Data Analyst | BI Developer </h1><p><h2>Transforming Business Data into Strategic Decisions</h2></p>
+            <p>I specialize in leveraging Power BI, Advanced Excel, and SQL to solve complex business problems. I
+                build robust data models and insightful dashboards that drive measurable improvements in performance and
+                efficiency.</p>
+            <a href="#portfolio" class="button_prj">View My Projects</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>👤 About Me & Core Skills</h2>
+            <p class="mission">
+                I believe that every number tells a story, and my expertise lies in making that story easy to understand
+                and act upon.
+            </p>
+
+            <div class="skills-grid">
+                <div>
+                    <h3>Business Intelligence</h3>
+                    <ul>
+                        <li>Power BI (DAX, M Language)</li>
+                        <li>Data Visualization & Storytelling</li>
+                        <li>Report Design & KPIs</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mission">
+            </p>
+
+
+            <div class="skills-grid">
+                <div>
+                    <h3>Advanced Excel</h3>
+                    <ul>
+                        <li>PivotTables and PivotCharts</li>
+                        <li>Advanced Formulas like Lookup Functions, Conditional and Aggregation Functions </li>
+                        <li>Visualization & Reporting - Custom Chart Types and Interactive Dashboards</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>📊 Featured Projects</h2>
+
+            <div class="project-card">
+                <h3>Mobile Sales Dashboard</h3>
+                <p><strong>Tools Used:</strong> Power BI, DAX</p>
+                <div class="project-details">
+                    <div class="code-snippet">
+                        <img src="onyxdatachallenge.png" alt="">
+                        <p></p>
+                        <a href="https://github.com/VisalakshiH/Onyx-Data-Challenge-May-2025" class="button">View Project</a>
+                    </div>
+                </div>
+                <p><a href="#" class="view-link"></a></p>
+            </div>
+
+            <div class="project-card">
+                <h3>E-commerce Sales and Profit Analysis</h3>
+                <p><strong>Tools Used:</strong> Power BI, DAX</p>
+                <div class="project-details">
+                    <div class="code-snippet">
+                        <img src="Ecommerce_Analysis.jpg" alt="">
+                        <a href="https://github.com/VisalakshiH/ecommerce_sales" class="button">View Project</a>
+                    </div>
+                </div>
+                <p><a href="#" class="view-link"></a></p>
+            </div>
+
+            <div class="project-card">
+                <h3>Air Quality Index Dashboard</h3>
+                <p><strong>Tools Used:</strong> Power BI, DAX</p>
+                <div class="project-details">
+                    <div class="code-snippet">
+                        <img src="AQI.png" alt="">
+                        <a href="https://github.com/VisalakshiH/Air-Quality-Index-Dashboard" 
+                            class="button">View Project</a>
+                    </div>
+                </div>
+                <p><a href="#" class="view-link"></a></p>
+            </div>
+            <p><a href="#" class="view-link"></a></p>
+
+            <div class="project-card">
+                <h3>Consumer Financial Complaints Analysis - Onyx Data Challenge October 2025</h3>
+                <p><strong>Tools Used:</strong> Power BI, DAX</p>
+                <div class="project-details">
+                    <div class="code-snippet">
+                        <img src="FinancialComplaintsAnalysis.png" alt="">
+                        <a href="https://github.com/VisalakshiH/Onyx_Data_Challenge_Oct2025" class="button">View Project</a>
+
+                    </div>
+                </div>
+                <p><a href="#" class="view-link"></a></p>
+            </div>
+            
+       
+        <div class="project-card">
+            <h3>NYC Collisions Dashboard</h3>
+            <p><strong>Tools Used: </strong>Advanced Excel</p>
+            <div class="project-details">
+                <div class="code-snippet">
+                    <img src="nyccollisions.png" alt="">
+                    <a href="https://github.com/VisalakshiH/New-York-City-Collisions-Dashboard" class="button">View Project</a>
+                </div>
+            </div>
+            <p><a href="#" class="view-link"></a></p>
+        </div>
+        <p><a href="#" class="view-link"></a></p>
+
+        <div class="project-card">
+            <h3>Furniture Sales Dashboard</h3>
+            <p><strong>Tools Used: </strong>Advanced Excel</p>
+            <div class="project-details">
+                <div class="code-snippet">
+                    <img src="Furniture_Sales.png" alt="">
+                    <a href="https://github.com/VisalakshiH/Furniture-Sales-Dashboard" class="button">View Project</a>
+                </div>
+            </div>
+            <p><a href="#" class="view-link"></a></p>
+        </div>
+        <p><a href="#" class="view-link"></a></p>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>✉️ Get In Touch</h2>
+            <p>I'm available for new opportunities and data analysis projects. Connect with me!</p>
+            <p>
+                Email: <a href="mailto:visahariharan@gmail.com">visahariharan@gmail.com</a> |
+                LinkedIn: <a href="https://www.linkedin.com/in/visalakshi-hariharan/" target="_blank">linkedin.com/in/visalakshih</a>
             </p>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 md:py-24 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
-
-            <!-- Power BI Projects -->
-            <h3 class="text-2xl font-semibold text-teal-400 mb-6">Power BI Projects</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 -->
-                <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
-                    <img src="onyxdatachallenge.png" alt="Power BI Project 1" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h4 class="text-xl font-bold mb-2">Mobile Sales Dashboard</h4>
-                    <p class="text-gray-400 mb-4">This dashboard was built for the Onyx Data Challenge for May 2025. It offers insights into mobile sales over a period of 12 months.</p>
-                    <a href="https://github.com/VisalakshiH/Onyx-Data-Challenge-May-2025" 
-                    class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
-                        View Project
-                    </a>
-                </div>
-                <!-- Project Card 2 -->
-                <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
-                    <img src="AQI.png" alt="Power BI Project 2" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h4 class="text-xl font-bold mb-2">Air Quality Index Dashboard</h4>
-                    <p class="text-gray-400 mb-4">One of the very first dashboards created to get insights into the Air Quality Index and pollution levels of various Indian cities.
-                    </p>
-                    <a href="https://github.com/VisalakshiH/Air-Quality-Index-Dashboard" 
-                    class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
-                        View Project
-                    </a>
-                </div>
-                <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
-                    <img src="Ecommerce_Analysis.jpg" alt="Power BI Project 2" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h4 class="text-xl font-bold mb-2">E-commerce Sales and Profit Analysis</h4>
-                    <p class="text-gray-400 mb-4">
-                        A high-level summary featuring key performance indicators (KPIs) for sales, profit and orders 
-                        and includes dynamic sales trends by year.                    </p>
-                    <a href="https://github.com/VisalakshiH/ecommerce_sales" 
-                    class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
-                        View Project
-                    </a>
-                </div>
-
-
-            </div>
-
-            <!-- Excel Projects -->
-            <h3 class="text-2xl font-semibold text-teal-400 mt-12 mb-6">MS Excel Projects</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 -->
-                <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
-                    <img src="nyccollisions.png" alt="Python Project 1" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h4 class="text-xl font-bold mb-2">NYC Collisions Dashboard</h4>
-                    <p class="text-gray-400 mb-4">This is a fully dynamic dashboard made completely in MS Excel for showcasing key metrics 
-                        such as Sales, Profit, Shipping Duration and Statewise distribution of orders.</p>
-                    <a href="https://github.com/VisalakshiH/New-York-City-Collisions-Dashboard" 
-                    class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
-                        View Project
-                    </a>
-                </div>
-                <!-- Project Card 2 -->
-                <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
-                    <img src="Furniture_Sales.png" alt="Python Project 2" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h4 class="text-xl font-bold mb-2"> Furniture Sales Dashboard</h4>
-                    <p class="text-gray-400 mb-4">This dashboard is completely built in MS Excel. The data has been cleaned using Power Query. It analyses collsions in New York City and offers useful insights to minimise them.</p>
-                    <a href="https://github.com/VisalakshiH/Furniture-Sales-Dashboard" 
-                    class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
-                        View Project
-                    </a>
-                </div>
-                
-            </div>
-
-            <!-- SQL Projects -->
-            <h3 class="text-2xl font-semibold text-teal-400 mt-12 mb-6">SQL Projects</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 -->
-                <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
-                    <img src="restaurant_analysis.jpg" alt="Python Project 1" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h4 class="text-xl font-bold mb-2">Restaurant Order Analysis Using MySQL</h4>
-                    <p class="text-gray-400 mb-4">
-                        Analysis of restaurant orders and customer data in SQL.</p>
-                    <a href="https://github.com/VisalakshiH/restaurant_sales_analysis" 
-                    class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
-                        View Project
-                    </a>
-                </div>
-                <!-- Project Card 2 -->
-                <!-- <div class="project-card bg-gray-900 p-6 rounded-lg shadow-lg">
-                    <img src="https://placehold.co/600x400/1a202c/a0aec0?text=Data+Analysis" alt="Python Project 2" class="rounded-md mb-4 w-full h-48 object-cover">
-                    <h4 class="text-xl font-bold mb-2">Automated Report Generator</h4>
-                    <p class="text-gray-400 mb-4">A script that uses Pandas and Matplotlib to automatically fetch data, perform analysis, and generate a PDF report.</p>
-                    <a href="#" class="inline-block bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded-md transition-colors">
-                        View Project
-                    </a>
-                </div> -->
-                
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
-            <p class="text-gray-400 max-w-2xl mx-auto mb-8">
-                Feel free to connect with me on social media or send me an email. I'm always open to discussing new projects and opportunities.
-            </p>
-            <div class="flex justify-center space-x-6 text-2xl">
-                <a href="#" class="hover:text-teal-400 transition-colors" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="hover:text-teal-400 transition-colors" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="mailto:your.email@example.com" class="hover:text-teal-400 transition-colors" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 py-6 text-center text-gray-400">
-        <div class="container mx-auto px-4">
-            <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 @Visalakshi. Built with HTML & CSS.</p>
         </div>
     </footer>
+
 </body>
+
 </html>
